@@ -1,0 +1,33 @@
+{
+  "name": "wmtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start-server": "nodemon ./app/server.js",
+    "test": "jest ./tests/wm2 --detectOpenHandles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danisco212/WM2Test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danisco212/WM2Test/issues"
+  },
+  "homepage": "https://github.com/Danisco212/WM2Test#readme",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "express": "^4.18.1",
+    "jest": "^28.1.3",
+    "puppeteer": "^15.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
