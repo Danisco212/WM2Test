@@ -14,6 +14,27 @@ describe('WM2 onerror test', () => {
       
   })
 
+  test('should fire error callback', async () => {
+    const page = await browser.newPage();
+    await page.goto('http://localhost:5001/onerror')
+
+    const errorCallback = error => {
+      console.log("there was an error in payment", error)
+    }
+
+    await page.evaluate(() => {
+        const link = document.querySelector('link[rel="monetization"]');
+        if(!link){
+            throw "monetization link tag does not exist on this webpage"
+        }
+        link.addEventListener("error", errorCallback)
+    })
+
+    setTimeout(() => {
+      expect(errorCallback).toHaveBeenCalled()
+    }, 2000)
+  })
+
   it('should fire error callback', async () => {
     const page = await browser.newPage();
     await page.goto('http://localhost:5001/onerror')
@@ -23,9 +44,10 @@ describe('WM2 onerror test', () => {
         if(!link){
             throw "monetization link tag does not exist on this webpage"
         }
-        link.addEventListener("error", error => {
-            console.log("there was an error in payment", error)
-        })
+        const errorCallback = error => {
+          console.log("there was an error in payment", error)
+        }
+        link.addEventListener("error", errorCallback)
     })
 
   })
