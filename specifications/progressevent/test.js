@@ -2,11 +2,22 @@ function run(){
     const link = document.querySelector('link[rel="monetization"]') ||
             document.createElement("link");
     link.addEventListener('load', handleLoad)
+    link.addEventListener('monetization', handleMonetization)
+}
+
+function handleMonetization(event){
+    addProgress("Payment sent...")
+    const { amount, assetCode, assetScale } = event;
+    try {
+        addProgress(`Browser sent ${assetCode}${amount / (10 * assetScale)}.`);
+    } catch (error) {
+        addProgress(error)
+    }
 }
 
 function handleLoad(event) {
     addProgress('Connection established...')
-    addProgress("Test passed")
+    addProgress("Payout started..")
     // note: it doesnt specify what the error actually is, that might need to be changed
 }
 

@@ -10,7 +10,7 @@ function run(timeBetween = 0) {
         const link = document.querySelector('link[rel="monetization"]') ||
             document.createElement("link");
 
-        if (link.relList.supports("monetization") || link.relList.contains("monetization")) {
+        if (link.relList.supports("monetization")) {
             // without the .contains logic it fails even if there is a monetization link, so the check in the documentation needs to be reworked
             addProgress("link tag found")
             setTimeout(() => {
