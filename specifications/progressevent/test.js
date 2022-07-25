@@ -18,7 +18,6 @@ function handleMonetization(event){
 function handleLoad(event) {
     addProgress('Connection established...')
     addProgress("Payout started..")
-    // note: it doesnt specify what the error actually is, that might need to be changed
 }
 
 function addProgress(content) {

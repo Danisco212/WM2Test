@@ -7,7 +7,6 @@ function run(){
 function handleLoad(event) {
     addProgress('Connection established...')
     addProgress("Test passed")
-    // note: it doesnt specify what the error actually is, that might need to be changed
 }
 
 function addProgress(content) {
