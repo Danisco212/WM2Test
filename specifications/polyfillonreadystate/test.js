@@ -1,11 +1,8 @@
-function sayThanks() {
-    addProgress('Thanks for your support')
-}
-
 function run() {
     document.addEventListener('DOMContentLoaded', () => {
         const link = document.querySelector('link[rel="monetization"]') ||
             document.createElement("link");
+            console.log(link.relList.supports("monetization"))
         if (link.relList.supports("monetization")) {
             addProgress("link tag found")
             addProgress("Test passed")

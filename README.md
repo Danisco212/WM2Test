@@ -17,3 +17,12 @@ Specification: https://webmonetization-preview.netlify.app/specification.html
 2. In [specifications](Documentation/specifications/) select any of the options and run index.html in the browser to run the test.
 
 3. The test result will be printed in the body of the webpage.
+
+## Tests
+1. link.relList.supports('monetization') should work at any point in document ready state
+2. onerror event should be fired
+3. onload event should be fire
+4. onmonetization event should be fired on the link tag
+5. onmonetization event should be fired on any html tag on the webpage
+6. onmonetization event fired (Event bubbling)
+7. monetization of media content

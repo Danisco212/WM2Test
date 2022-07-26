@@ -7,6 +7,7 @@ function run(){
 function handleLoad(event) {
     addProgress('Connection established...')
     addProgress("Test passed")
+    console.log(event);
 }
 
 function addProgress(content) {
