@@ -25,4 +25,6 @@ Specification: https://webmonetization-preview.netlify.app/specification.html
 4. onmonetization event should be fired on the link tag
 5. onmonetization event should be fired on any html tag on the webpage
 6. onmonetization event fired (Event bubbling)
-7. monetization of media content
+7. link tag in body
+8. link tag injected after DOM loaded
+9. remove link tag while payout is happening
