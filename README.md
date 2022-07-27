@@ -14,7 +14,7 @@ Specification: https://webmonetization-preview.netlify.app/specification.html
 ## Steps
 1. For chrome, download the extension from https://chrome.google.com/webstore/detail/coildev/hcohoecolgmlofifjaobjhidpoaciknp. For firefox, download the addon from https://addons.mozilla.org/en-GB/firefox/addon/coilwm2preview/
 
-2. In [specifications](Documentation/specifications/) select any of the options and run index.html in the browser to run the test.
+2. In [specifications](/specifications/) select any of the options and run index.html in the browser to run the test.
 
 3. The test result will be printed in the body of the webpage.
 
