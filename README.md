@@ -28,3 +28,4 @@ Specification: https://webmonetization-preview.netlify.app/specification.html
 7. link tag in body
 8. link tag injected after DOM loaded
 9. remove link tag while payout is happening
+10. Restrict payment pointer url with CSP
