@@ -23,7 +23,7 @@ Specification: https://webmonetization-preview.netlify.app/specification.html
 2. onerror event should be fired
 3. onload event should be fired
 4. onmonetization event should be fired on the link tag
-5. onmonetization event should be fired on any html tag on the webpage
+5. onmonetization event should be fired on any link ancestor tag on the webpage
 6. onmonetization event fired (Event bubbling)
 7. link tag in body
 8. link tag injected after DOM loaded
