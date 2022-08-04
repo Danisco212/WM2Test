@@ -29,4 +29,8 @@ Specification: https://webmonetization-preview.netlify.app/specification.html
 8. link tag injected after DOM loaded
 9. remove link tag while payout is happening
 10. Restrict payment pointer url with CSP
-11. Multiple link tags inside an iframe (fails)
+11. Multiple link tags inside an iframe
+12. link tag with rel value other than monetization
+13. Nested iframe test
+14. link tag with disabled attribute
+15. Changing the link href dynamically during payout
